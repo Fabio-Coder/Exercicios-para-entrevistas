@@ -1,4 +1,4 @@
-def romeu_e_julieta(intervalo):
+def romeu_e_julieta(entrada):
     """
     “Escreva um programa que imprima os números de 1 a 100. Mas para múltiplos de três imprima
     ‘Fizz’ em vez do número e para os múltiplos de cinco imprima ‘Buzz’.
@@ -28,15 +28,15 @@ def romeu_e_julieta(intervalo):
 
     """
 
-    for n in range(1,intervalo + 1):
-        if n % 5 == 0 and n % 3 == 0:
-            print('Romeu e Julieta')
-        elif n % 5 == 0:
-            print('Goiabada')
-        elif n % 3 == 0:
-            print('Queijo')
-        else:
-            print(n)
+    n = entrada
+    if n % 5 == 0 and n % 3 == 0:
+        return('Romeu e Julieta')
+    elif n % 5 == 0:
+        return('Goiabada')
+    elif n % 3 == 0:
+        return('Queijo')
+    else:
+        return(n)
 
 if __name__ == '__main__':
     romeu_e_julieta(100)
